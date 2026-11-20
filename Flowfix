@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Faucet Repair Salem MA | FlowFix Plumbing</title>
+
+<meta name="description" content="Explore faucet repair, installation, leak detection and maintenance services in Salem, MA with FlowFix Plumbing.">
+
+<style>
+:root {
+    --primary: #102B46;
+    --secondary: #176B91;
+    --accent: #21B6B2;
+    --light: #F3F8FA;
+    --white: #ffffff;
+    --text: #263B4B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+    background: var(--light);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* Header */
+
+.topbar {
+    background: var(--primary);
+    color: white;
+    padding: 9px 0;
+    font-size: 13px;
+}
+
+header {
+    background: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--primary);
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Hero */
+
+.hero {
+    background:
+    linear-gradient(110deg, rgba(10,35,58,.95), rgba(20,100,130,.85)),
+    url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #e3f0f4;
+    margin-bottom: 25px;
+}
+
+/* General Sections */
+
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
+
+.section-title h2 {
+    color: var(--primary);
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #647586;
+}
+
+/* About */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+.about-box h2 {
+    color: var(--primary);
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.check-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.check-list li {
+    padding: 7px 0;
+}
+
+.check-list li:before {
+    content: "✓";
+    color: var(--accent);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Service Cards */
+
+.services {
+    background: #EAF2F5;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #dce7ec;
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
+}
+
+.service-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.service-card p {
+    color: #647586;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.service-card a {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Locations */
+
+.location-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.location-list a {
+    background: white;
+    border: 1px solid #dce7ec;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: var(--primary);
+    transition: .3s;
+}
+
+.location-list a:hover {
+    background: var(--accent);
+}
+
+/* CTA */
+
+.cta {
+    background: linear-gradient(110deg, var(--primary), var(--secondary));
+    color: white;
+    text-align: center;
+    padding: 55px 25px;
+    border-radius: 12px;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+/* FAQ */
+
+.faq-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.faq-item h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+/* Footer */
+
+footer {
+    background: #0B2238;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    display: block;
+    color: #c3d4dd;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+.copyright {
+    border-top: 1px solid #ffffff30;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Responsive */
+
+@media(max-width:850px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:550px) {
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+<div class="container">
+Faucet Repair Services | Salem, Massachusetts
+</div>
+</div>
+
+<header>
+<div class="container navbar">
+
+<a href="https://faucetrepairsalemma.com/" class="logo">
+FlowFix <span>Plumbing</span>
+</a>
+
+<nav>
+<a href="https://faucetrepairsalemma.com/">Home</a>
+<a href="https://faucetrepairsalemma.com/about">About</a>
+<a href="#services">Services</a>
+<a href="#locations">Locations</a>
+<a href="https://faucetrepairsalemma.com/blog/">Blog</a>
+<a href="https://faucetrepairsalemma.com/contact">Contact</a>
+</nav>
+
+<a href="https://faucetrepairsalemma.com/contact" class="btn">
+Get Estimate
+</a>
+
+</div>
+</header>
+
+<main>
+
+<!-- Hero Section -->
+
+<section class="hero">
+<div class="container hero-content">
+
+<p>FLOWFIX PLUMBING | SALEM MA</p>
+
+<h1>Professional Faucet Repair in Salem, MA</h1>
+
+<p>
+Explore faucet repair, replacement, installation and maintenance
+services for residential and commercial properties in Salem,
+Massachusetts.
+</p>
+
+<a href="https://faucetrepairsalemma.com/contact" class="btn">
+Request Service
+</a>
+
+</div>
+</section>
+
+<!-- About Section -->
+
+<section>
+<div class="container about-grid">
+
+<div class="about-box">
+<h2>Reliable Faucet Repair Services</h2>
+
+<p>
+A leaking or malfunctioning faucet can waste water and
+create unnecessary inconvenience. FlowFix Plumbing provides
+faucet-related service information and solutions for common
+plumbing issues in Salem, MA.
+</p>
+
+<ul class="check-list">
+<li>Kitchen Faucet Repair</li>
+<li>Bathroom Faucet Repair</li>
+<li>Faucet Installation</li>
+<li>Leak Detection</li>
+<li>Faucet Replacement</li>
+<li>Preventive Maintenance</li>
+</ul>
+
+</div>
+
+<div class="about-box">
+<h2>Explore Our Plumbing Services</h2>
+
+<p>
+Whether you are experiencing a dripping faucet, low water
+pressure or a damaged fixture, explore our dedicated service
+pages to learn more about available solutions.
+</p>
+
+<br>
+
+<a href="https://faucetrepairsalemma.com/about" class="btn">
+About FlowFix Plumbing
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- Services Section -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Our Faucet Repair Services</h2>
+<p>
+Explore our faucet repair, installation and maintenance services
+in Salem, Massachusetts.
+</p>
+</div>
+
+<div class="service-grid" id="serviceGrid"></div>
+
+</div>
+</section>
+
+<!-- Locations -->
+
+<section id="locations">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Areas We Cover in Salem MA</h2>
+<p>
+Explore our local faucet repair service information for
+different Salem neighborhoods.
+</p>
+</div>
+
+<div class="location-list" id="locationGrid"></div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+
+<section class="services">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+</div>
+
+<div class="faq-item">
+<h3>What are common faucet problems?</h3>
+<p>
+Common problems include dripping faucets, damaged cartridges,
+leaking connections and low water pressure.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>When should a faucet be replaced?</h3>
+<p>
+Replacement may be appropriate when a faucet is severely damaged,
+corroded or when repair is no longer practical.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Where can I find faucet repair services in Salem?</h3>
+<p>
+Visit FlowFix Plumbing to explore service information and
+contact details for Salem, Massachusetts.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>How can I contact FlowFix Plumbing?</h3>
+<p>
+Visit the official contact page to request further information.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+
+<section>
+<div class="container">
+
+<div class="cta">
+<h2>Need Faucet Repair in Salem, MA?</h2>
+
+<p>
+Explore our services and contact FlowFix Plumbing
+for more information.
+</p>
+
+<a href="https://faucetrepairsalemma.com/contact" class="btn">
+Contact Us Today
+</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+<h3>FlowFix Plumbing</h3>
+<p>
+Faucet repair and installation service information
+for Salem, Massachusetts.
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<a href="https://faucetrepairsalemma.com/">Home</a>
+<a href="https://faucetrepairsalemma.com/about">About Us</a>
+<a href="https://faucetrepairsalemma.com/blog/">Blog</a>
+<a href="https://faucetrepairsalemma.com/contact">Contact</a>
+</div>
+
+<div>
+<h3>Services</h3>
+<a href="https://faucetrepairsalemma.com/leaky-faucet-repair">Leaky Faucet Repair</a>
+<a href="https://faucetrepairsalemma.com/kitchen-faucet-repair">Kitchen Faucet Repair</a>
+<a href="https://faucetrepairsalemma.com/bathroom-faucet-repair">Bathroom Faucet Repair</a>
+<a href="https://faucetrepairsalemma.com/faucet-installation">Faucet Installation</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<a href="https://faucetrepairsalemma.com/contact">Contact Page</a>
+<a href="https://faucetrepairsalemma.com/">Official Website</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 FlowFix Plumbing. All Rights Reserved.
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+/* Service page links */
+
+const services = [
+["Faucet Installation","faucet-installation"],
+["Leaky Faucet Repair","leaky-faucet-repair"],
+["Kitchen Faucet Repair","kitchen-faucet-repair"],
+["Bathroom Faucet Repair","bathroom-faucet-repair"],
+["Faucet Cartridge Replacement","faucet-cartridge-replacement"],
+["Faucet Aerator Cleaning","faucet-aerator-cleaning"],
+["Faucet Valve Replacement","faucet-valve-replacement"],
+["Commercial Faucet Repair","commercial-faucet-repair"],
+["Emergency Faucet Repair","emergency-faucet-repair"],
+["Faucet Maintenance Services","faucet-maintenance-services"],
+["Water Pressure Adjustment","water-pressure-adjustment"],
+["Faucet Replacement","faucet-replacement"],
+["Touchless Faucet Installation and Repair","touchless-faucet-installation-and-repair"],
+["Faucet Leak Detection","faucet-leak-detection"],
+["Water Filtration Faucet Installation","water-filtration-faucet-installation"],
+["Pot Filler Faucet Installation","pot-filler-faucet-installation"],
+["Bar Faucet Installation and Repair","bar-faucet-installation-and-repair"],
+["Vintage Faucet Restoration","vintage-faucet-restoration"],
+["Faucet Accessory Installation","faucet-accessory-installation-soap-dispensers-etc"]
+];
+
+const base = "https://faucetrepairsalemma.com/";
+
+document.getElementById("serviceGrid").innerHTML =
+services.map(service => `
+<div class="service-card">
+<h3>${service[0]}</h3>
+<p>Explore ${service[0]} information and service details in Salem, MA.</p>
+<a href="${base + service[1]}" target="_blank" rel="noopener">
+Explore Service →
+</a>
+</div>
+`).join("");
+
+/* Location links */
+
+const locations = [
+["Downtown Salem","faucet-repair-salem-ma-downtown-salem"],
+["Historic District","faucet-repair-salem-ma-historic-district"],
+["Salem Willows","faucet-repair-salem-ma-salem-willows"],
+["Salem Common","faucet-repair-salem-ma-salem-common"],
+["North Salem","faucet-repair-salem-ma-north-salem"],
+["South Salem","faucet-repair-salem-ma-south-salem"],
+["Witchcraft Heights","faucet-repair-salem-ma-witchcraft-heights"],
+["McIntire District","faucet-repair-salem-ma-mcintire-district"],
+["Broadway","faucet-repair-salem-ma-broadway"],
+["Jeffreys Neck","faucet-repair-salem-ma-jeffreys-neck"]
+];
+
+document.getElementById("locationGrid").innerHTML =
+locations.map(location => `
+<a href="${base + location[1]}"
+target="_blank" rel="noopener">
+${location[0]} →
+</a>
+`).join("");
+
+</script>
+
+</body>
+</html>
